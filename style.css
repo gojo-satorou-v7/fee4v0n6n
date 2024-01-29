@@ -1,0 +1,119 @@
+body {
+    background-color: rgba(212, 65, 245, 0.36);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-link,
+.about {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    
+    transition: background-color 0.3s ease;
+}
+
+.about {
+    margin-left: auto; /* Push "About Us" link to the right */
+}
+
+.navbar-link:hover,
+.about:hover {
+background-color: #7cd409; /*Darken the background on hover*/
+border-radius: 10%;
+
+}   
+/* Add additional styling as needed */
+
+
+/* Add additional styling as needed */   
+
+.main-area {
+    text-align: center;
+}
+
+#game {
+    background-color: green;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 3px;
+    border-style: groove;
+}
+
+#description {
+    font-size: medium;
+    text-align: justify;
+    padding: 1% 5%;
+    color: black;
+    font-family: cursive;
+    line-height: 1.5;
+}
+
+#heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#more-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: large;
+        padding-left: 50px;
+    }
+
+    .navbar-link{
+        padding-left: 10px;
+    }
+    .about {
+        padding-left: 50px;
+    }
+
+    #description {
+        padding: 1% 2%;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Pattern Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+
+<div class="navbar" role="banner" data-collapse="medium">
+    <div class="navbar-container">
+        <a href="/WEB/home.html" class="logo">Ethical Eye</a><br><br><br>
+        <nav role="navigation" class="navbar-menu">
+            <a href="quiz.html" class="navbar-link">Quiz</a>
+            <a href="/About" class="about">About Us</a>
+        </nav>
+    </div>
+</div>
+
+<div class="quiz-container">
+    <div class="box" id="quiz_contain">
+        <h2>Quiz</h2><br>
+        <h4> This Quiz also contains MULTI-CORRECT answer.</h4><br>
+        <p id="question"></p>
+        <div id="choices" class="choices"></div><br>
+        <button id="next-btn" class="next-button">Next</button>
+    </div>
+</div>
+
+<!--<div class="quiz-container" style="display: none;">
+    <div class="question">Question 2: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-2" src="img2.png" alt="Dark Pattern Question 2">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">False Urgency</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 3: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-3" src="img3.jpg" alt="Dark Pattern Question 3">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Basket Sneaking</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 4: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-4" src="img4.png" alt="Dark Pattern Question 4">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 5: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-5" src="img5.jpg" alt="Dark Pattern Question 5">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 6: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-6" src="img6.jpg" alt="Dark Pattern Question 6">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 7: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-7" src="img7.jpg" alt="Dark Pattern Question 7">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 8: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-8" src="img8.png" alt="Dark Pattern Question 8">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 9: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-9" src="img9.jpg" alt="Dark Pattern Question 9">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<div class="quiz-container" style="display: none;">
+    <div class="question">Question 10: What type of dark pattern is shown in the image?</div>
+    <img id="quiz-image-10" src="img10.png" alt="Dark Pattern Question 10">
+    <div class="options-container">
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 1</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 2</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 3</div>
+        <div class="option" onclick="checkAnswer(this, 2)">Example Option 4</div>
+    </div>
+</div>
+
+<button id="next-btn" onclick="goToNextQuestion()">Next</button>
+-->
+
+</body>
+</html>
